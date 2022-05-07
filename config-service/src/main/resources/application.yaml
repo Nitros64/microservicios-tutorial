@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  cloud: 
+    config:
+      server:
+        git:
+          default-label: config-server #branch
+          uri: https://github.com/Nitros64/microservicios-tutorial #gihub account
+          search-paths: config-data #directory routes/config for any microservice
+  application:
+    name: config-service
+
+
+
+#server.port=8081
+#spring.cloud.config.server.git.default-label=config-server
+#spring.cloud.config.server.git.uri=https://github.com/ChristianRaulRamirez/microservicios-tutorial
+#spring.cloud.config.server.git.search-paths=config-data
+#spring.application.name=config-service
