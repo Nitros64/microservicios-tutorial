@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          default-label: eureka #branch de git actual
+          default-label: multiples-instaces #branch de git actual
           uri: https://github.com/Nitros64/microservicios-tutorial #gihub account
           search-paths: config-data #directory routes/config for any microservice
   application:
